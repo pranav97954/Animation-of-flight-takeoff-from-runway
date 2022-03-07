@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    weidth:100%;
+    background-image: url(image/background01.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.runway{
+    height: 160px;
+    width: 100%;
+    background-image: url(image/road.jpg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.airplane{
+    width: 500px;
+    position:absolute;
+    bottom: 80px;
+    right: -250px;
+    animation: plan 5s linear infinite;
+    transform-origin: 100% 50%;
+}
+@keyframes plan{
+    0%{
+        transform:translate(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform:translate(-500px)translateY(0px) rotate(5deg);
+    }
+    100%{
+        transform:translate(-1500px) translateY(-200px) rotate(20deg);
+    }
+}
